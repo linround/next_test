@@ -5,6 +5,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 - window10
 - node 18.12.0
 - npm 8.19.2
+
+
 ## Getting Started
 
 First, run the development server:
