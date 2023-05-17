@@ -5,7 +5,7 @@ import React from "react";
 export default function  layout(props:React.PropsWithChildren){
   const {children} = props
   return (
-    <div>
+    <div className={'marketing blog layout'}>
       <div>marketing blog layout</div>
       {children}
     </div>

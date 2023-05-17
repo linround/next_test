@@ -26,6 +26,12 @@ export default function ButtonNavigation(){
           button按钮：account
         </button>
       </div>
+      <div>
+
+        <button type={'button'} style={{padding:'5px'}} onClick={()=>router.push('/blog/slug')}>
+          button按钮：blog slug
+        </button>
+      </div>
     </>
   )
 }
