@@ -1,7 +1,7 @@
 export default function Page(){
   return (
     <div>
-      ui
+      ui page
     </div>
   )
 }
