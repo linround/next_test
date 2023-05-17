@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function page(props:React.PropsWithChildren){
+export default function page(){
   return (
     <h2>
       marketing blog page

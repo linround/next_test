@@ -1,7 +1,5 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
 import React from "react";
-const inter = Inter({ subsets: ['latin'] })
 import {Navigation} from "@/app/ui/Navigation";
 import ButtonNavigation from "@/app/components/ButtonNavigation";
 
@@ -17,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body>
       <div className={'app layout'} >
         <p style={{background:'blueviolet',color:'white'}}>父级路由：</p>
         <ButtonNavigation />

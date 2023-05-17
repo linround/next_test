@@ -28,8 +28,8 @@ export default function ButtonNavigation(){
       </div>
       <div>
 
-        <button type={'button'} style={{padding:'5px'}} onClick={()=>router.push('/blog/slug')}>
-          button按钮：blog slug
+        <button type={'button'} style={{padding:'5px'}} onClick={()=>router.push('/blog/slug2')}>
+          button按钮：blog slug2
         </button>
       </div>
     </>
