@@ -32,6 +32,20 @@ export default function ButtonNavigation(){
           button按钮：blog slug2
         </button>
       </div>
+      <div>
+
+        <button type={'button'} style={{padding:'5px'}} onClick={()=>router.push('/shop')}>
+          button按钮：app  shop
+        </button>
+
+        <button type={'button'} style={{padding:'5px'}} onClick={()=>router.push('/shop/one')}>
+          button按钮：app  shop one
+        </button>
+
+        <button type={'button'} style={{padding:'5px'}} onClick={()=>router.push('/shop/two')}>
+          button按钮：app  shop two
+        </button>
+      </div>
     </>
   )
 }
