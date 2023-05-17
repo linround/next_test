@@ -10,9 +10,11 @@ export function Navigation(prop:React.PropsWithChildren<{href:string}>) {
   const isActive = pathname.startsWith(href);
 
   return (
-    <Link href={href} className={isActive ? style.textBlue : 'text-black'}>
-      {children}
-    </Link>
+    <h2>
+      <Link href={href} className={isActive ? style.textBlue : 'text-black'}>
+        {children}
+      </Link>
+    </h2>
   );
 
 }

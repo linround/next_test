@@ -1,8 +1,6 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
 import React from "react";
-import Link from "next/link";
-import ThemeProvider from './theme-provider';
 const inter = Inter({ subsets: ['latin'] })
 import {Navigation} from "@/app/ui/Navigation";
 
@@ -20,9 +18,12 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
       <div className={'app layout'}>
-        <h1>app layout</h1>
+        <Navigation href={'/'}>app layout</Navigation>
         <a href={'/dashboard'}> a标签：dashboard</a>
         {/*使用link进行预取*/}
+        {/*标签嵌套问题 p ->div;p->h1  出现报错等等*/}
+        {/*<p><h1></h1></p>*/}
+        {/*<p><div></div></p>*/}
         <Navigation href={'/ui'} >ui</Navigation>
         <Navigation href={'/dashboard'}>link标签：dashboard</Navigation>
         {children}
