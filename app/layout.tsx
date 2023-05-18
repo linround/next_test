@@ -10,13 +10,20 @@ export const metadata = {
 
 export default function RootLayout({
   children,
+  team,
+  analytics,
+  auth
 }: {
   children: React.ReactNode
+  team: React.ReactNode
+  analytics: React.ReactNode
+  auth:React.ReactNode
 }) {
   return (
     <html lang="en">
       <body>
       <div className={'app layout'} >
+        <div>{auth}</div>
         <p style={{background:'blueviolet',color:'white'}}>父级路由：</p>
         <ButtonNavigation />
         <Navigation href={'/'}>app layout   app page loading(刷新)</Navigation>
@@ -27,7 +34,10 @@ export default function RootLayout({
         {/*<p><div></div></p>*/}
         <Navigation href={'/ui'} >link标签：ui</Navigation>
         <Navigation href={'/dashboard'}>link标签：dashboard</Navigation>
+
         <p style={{background:'blueviolet',color:'white'}}>相关内容：</p>
+        <div>{team}</div>
+        <div>{analytics}</div>
         <div style={{backgroundColor:'chartreuse'}} >{children}</div>
       </div>
       </body>
