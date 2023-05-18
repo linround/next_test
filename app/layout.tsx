@@ -4,21 +4,27 @@ import {Navigation} from "@/app/ui/Navigation";
 import ButtonNavigation from "@/app/components/ButtonNavigation";
 
 export const metadata = {
-  title: 'localhost:3000',
+  title: 'localhost:3001',
   description: 'next app 服务单段渲染实例',
 }
 
-export default function RootLayout({
-  children,
-  team,
-  analytics,
-  auth
-}: {
+export default async function RootLayout(prop: {
   children: React.ReactNode
   team: React.ReactNode
   analytics: React.ReactNode
   auth:React.ReactNode
 }) {
+  const {
+    children,
+    team,
+    analytics,
+    auth,
+  }=prop
+  await new Promise(resolve => {
+    setTimeout(resolve,500)
+  })
+  const ok = Math.random()>0.5
+  console.log('===============',prop)
   return (
     <html lang="en">
       <body>
@@ -36,8 +42,7 @@ export default function RootLayout({
         <Navigation href={'/dashboard'}>link标签：dashboard</Navigation>
 
         <p style={{background:'blueviolet',color:'white'}}>相关内容：</p>
-        <div>{team}</div>
-        <div>{analytics}</div>
+        <div>{ok ? team:analytics}</div>
         <div style={{backgroundColor:'chartreuse'}} >{children}</div>
       </div>
       </body>
