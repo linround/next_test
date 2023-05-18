@@ -1,8 +1,4 @@
-实力才能获取别人无条件的信任！ ---鲁大师
-# 环境
-- window10
-- node 18.12.0
-- npm 8.19.2
+
 # ssr的优势
 - [在合理场景中使用服务端组件和客户端组件](https://nextjs.org/docs/getting-started/react-essentials#when-to-use-server-and-client-components)
 - [组件细化，将可交互的组件细分为叶子组件；从而将其转化为客户端组件](https://nextjs.org/docs/getting-started/react-essentials#moving-client-components-to-the-leaves)
