@@ -1,10 +1,10 @@
 'use client'
 import {useRouter} from "next/navigation";
-import React from "react";
+import React, {Suspense} from "react";
 
 export default function ButtonNavigation(){
   const router = useRouter()
-  console.log('===app ButtonNavigation====')
+  console.log('===app ButtonNavigation====',)
   // refresh会导致重新渲染，即重新执行该函数
   return (
     <>

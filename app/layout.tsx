@@ -1,5 +1,5 @@
 import './globals.css'
-import React from "react";
+import React, {Suspense} from "react";
 import {Navigation} from "@/app/ui/Navigation";
 import ButtonNavigation from "@/app/components/ButtonNavigation";
 
@@ -19,7 +19,7 @@ export default function RootLayout({
       <div className={'app layout'} >
         <p style={{background:'blueviolet',color:'white'}}>父级路由：</p>
         <ButtonNavigation />
-        <Navigation href={'/'}>app layout</Navigation>
+        <Navigation href={'/'}>app layout   app page loading(刷新)</Navigation>
         <a href={'/dashboard'}> a标签：dashboard</a>
         {/*使用link进行预取*/}
         {/*标签嵌套问题 p ->div;p->h1  出现报错等等*/}
