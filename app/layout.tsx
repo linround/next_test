@@ -42,6 +42,9 @@ export default async function RootLayout(prop: {
         <Navigation href={'/dashboard'}>link标签：dashboard</Navigation>
 
         <p style={{background:'blueviolet',color:'white'}}>相关内容：</p>
+        {/*平行路由可以用来做条件渲染，
+        在弹框的场景中也可以使用平行路由。即一个路由是另一个路由的组件
+        */}
         <div>{ok ? team:analytics}</div>
         <div style={{backgroundColor:'chartreuse'}} >{children}</div>
       </div>
