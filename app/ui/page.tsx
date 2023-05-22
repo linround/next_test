@@ -5,3 +5,6 @@ export default function Page(){
     </div>
   )
 }
+
+export const runtime = 'nodejs'; // 'nodejs' (default) | 'edge'
+console.log('===============runtime',runtime)

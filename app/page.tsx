@@ -1,6 +1,5 @@
 import styles from './page.module.css'
 import {Suspense} from "react";
-
 // async function  ModuleComponent(){
 //   await new Promise((resolve)=>{
 //     setTimeout(()=>{

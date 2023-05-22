@@ -24,7 +24,7 @@ export default async function RootLayout(prop: {
     setTimeout(resolve,500)
   })
   const ok = Math.random()>0.5
-  console.log('===============',prop)
+  // console.log('===============',prop)
   return (
     <html lang="en">
       <body>
